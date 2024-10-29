@@ -1,0 +1,291 @@
+[
+  {
+    "ContainingType": "Library_Management_System.AuthunticationController.AuthController",
+    "Method": "ChangePassword",
+    "RelativePath": "api/Auth/Change user password",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updatePassword",
+        "Type": "Library_Management_System.DTOs.UserUpdatePassword",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.AuthunticationController.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userLoginRequest",
+        "Type": "Library_Management_System.DTOs.UserLoginRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.AuthunticationController.AuthController",
+    "Method": "Register",
+    "RelativePath": "api/Auth/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "userRegistrition",
+        "Type": "Library_Management_System.DTOs.UserRegistritionRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Books.Controllers.BooksController",
+    "Method": "Delete",
+    "RelativePath": "api/Books/Delete",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Books.Controllers.BooksController",
+    "Method": "Get",
+    "RelativePath": "api/Books/Get_All",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Books.Controllers.BooksController",
+    "Method": "Get",
+    "RelativePath": "api/Books/Get_All_By_Parameters",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "Library_Management_System.Servises.Books.Models.InsertBookModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Books.Controllers.BooksController",
+    "Method": "Insert",
+    "RelativePath": "api/Books/Insert",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "insertBookModel",
+        "Type": "Library_Management_System.Servises.Books.Models.InsertBookModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Books.Controllers.BooksController",
+    "Method": "Update",
+    "RelativePath": "api/Books/Update",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateBookModel",
+        "Type": "Library_Management_System.Servises.Books.Models.UpdateBookModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Borrowings.Controller.BorrowingController",
+    "Method": "Add",
+    "RelativePath": "api/Borrowing/AddBookToBorrowings/{BookId}",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BookId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Borrowings.Controller.BorrowingController",
+    "Method": "Get",
+    "RelativePath": "api/Borrowing/GetDataOfBorrowingsBook",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Borrowings.Controller.BorrowingController",
+    "Method": "Update",
+    "RelativePath": "api/Borrowing/ReturnedUserDate",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "UserId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "BookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Favorites.Controller.FavoritesController",
+    "Method": "delete",
+    "RelativePath": "api/Favorites/DeleteFromFavorites",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Favorites.Controller.FavoritesController",
+    "Method": "Get",
+    "RelativePath": "api/Favorites/GetYourFavorites",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Favorites.Controller.FavoritesController",
+    "Method": "insert",
+    "RelativePath": "api/Favorites/InsertIntoFavorites",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Reservation.Controller.ReservationController",
+    "Method": "GetAll",
+    "RelativePath": "api/Reservation/GetAllReservation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Reservation.Controller.ReservationController",
+    "Method": "GetUser",
+    "RelativePath": "api/Reservation/GetUserReservation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Reservation.Controller.ReservationController",
+    "Method": "Insert",
+    "RelativePath": "api/Reservation/InsertIntoReservation",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Saves.Controllers.SavesController",
+    "Method": "Delete",
+    "RelativePath": "api/Saves/DeleteFromSaves",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Saves.Controllers.SavesController",
+    "Method": "Get",
+    "RelativePath": "api/Saves/GetAllSaves",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Library_Management_System.Servises.Saves.Controllers.SavesController",
+    "Method": "Save",
+    "RelativePath": "api/Saves/InsertSaves",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "BookId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
